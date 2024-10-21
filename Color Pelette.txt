@@ -1,0 +1,16 @@
+dark-#13545c
+main-#229995
+medium-#80dabe
+light-#f2a82a
+subsitute-#f6ecd3
+white-#ffffff
+gray-#f5f5f5
+
+
+
+flowershop colors
+fc9066
+ee650f
+bd0c15
+4d0501
+ 

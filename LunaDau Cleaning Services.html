@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaDau Cleaning Services</title>
+    <style>
+        body{
+            background-color: #ffffff;
+            margin: 0;
+        }
+        .comtainer{
+            background-color: #ffffff;
+            width: 100%;
+            min-height: fit-content;
+            font-size: 12px;
+        }
+
+        .naviBar{
+            background-color: #ffffff;
+        }
+        #upperNaviBar{
+            background-color: #ffffff;
+            height: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .LunaDaulogo{
+            background-color: #ffffff;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profileIcon{
+            background-color: #ffffff;
+            border-radius: 50%;
+            height: 38px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+ 
+        #lowerNaviBar{
+            background-color: #13545c;
+            color: #ffffff;
+            height: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .menuService{
+            background-color: #ffffff;
+            min-width: fit-content;
+            height: 20px;
+            border-radius: 7px;
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000000;
+            gap: 100px;
+        }
+        .socialIcons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+        }
+        .socialIcon{
+            background-color: #13545c;
+            width: 35px;
+            height: 34px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header{
+            background-image: url(./imgs/IMG-20240906-WA0040.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #f5f5f5;
+            height: 400px;
+        }
+        .headerColorOverlay{
+            background-color: #ffffff43;
+            height: 400px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        }
+
+        .tastimonial{
+            background-color: #ffffff;
+            min-height: fit-content;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tastimonialIconUser{
+            background-color: #f5f5f5;
+            width: 80px;
+            height: 80px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tastimonialIconUserImg{
+            background-color: #13545c;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tastimonialIconUserBrief{
+            padding-top: 20px;
+            color: #ffffff;
+            font-size: 13px;
+            min-height: fit-content;
+            min-width: fit-content;
+        }
+        .tastimonialCardSlot{
+            background-color: #13545c00;
+            min-height: fit-content;
+            min-width: fit-content;
+            gap: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .tastimonialCards{
+            background-color: #13545c;
+            width: 400px;
+            min-height: fit-content;
+            padding-bottom: 40px;
+            gap: 20px;
+            padding-right: 40px;
+            padding-left: 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-radius: 7px;
+        }
+        .tastimonialDescript{
+            min-width: fit-content;
+            min-height: fit-content;
+            gap: 20px;
+            padding: 5px;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 7px;
+        }
+        .pricing{
+            background-color: #f5f5f5;
+            min-height: fit-content;
+            gap: 20px;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+        .priceList1{
+            background-color: #ffffff;
+            width: 330px;
+            height: 450px;
+            border-radius: 7px;
+            padding: 20px;
+        }
+        .priceList2{
+            background-color: #229995;
+            color: #ffffff;
+            width: 360px;
+            height: 480px;
+            border-radius: 7px;
+            padding: 20px;
+        }
+        .ourTeam{
+            background-color: #ffffff;
+            height: 400px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: #a72c2c;
+            min-height: fit-content;
+        }
+        .upperFooter{
+            background-color: #13545c;
+            min-height: fit-content;
+            gap: 20px;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .upperFooterSubInfo{
+            background-color: rgba(255, 255, 255, 0.041);
+            color: #ffffff;
+            width: 300px;
+            height: 300px;
+        }
+        .lowerFooter{
+            background-color:#80dabe;
+            height: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatainer">
+        <div class="naviBar">
+            <div id="upperNaviBar">
+                <div class="LunaDauTitle">LunaDau Flower Shop</div>
+                <div class="socialIcons">
+                    <div class="socialIcon">
+                        <img src="./icons/Youtube White Icon.png" width="30" alt="social icon">
+                    </div>
+                    <div class="socialIcon">
+                        <img src="./icons/Facebook White Icon.png" width="29.40" height="29.3" alt="social icon">
+                    </div>
+                    <div class="socialIcon">
+                        <img src="./icons/Instagram White Icon.png" width="30" alt="social icon">
+                    </div>
+                    <div class="socialIcon">
+                          <img src="./icons/Twitter White Icon.png" width="30.2" height="29.3px"  alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="lowerNaviBar">
+                <div class="LunaDaulogo">
+                    <img src="./icons/LunaDau Flower Shop Logo Red.png" width="38px" alt="LunaDau Flower Shop Logo">
+                </div>
+                <div class="menuService">
+                    <span class="menuServiceDetails">Services</span>
+                    <span class="menuServiceDetails">About us</span>
+                    <span class="menuServiceDetails">Address</span>
+                    <span class="menuServiceDetails">Contacts</span>
+                    <span class="menuServiceDetails">Open Time</span>
+                    <span class="menuServiceDetails">Extras</span>
+                </div>
+                <div class="profileIcon">
+                    <div class="socialIcon">
+                    <img class="userIdColoroverlay" src="./icons/user icon white.png" width="29px" alt="Profile Icon">    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="headerColorOverlay"></div>
+        </div>
+        
+        <div class="tastimonial">
+            <div class="tastimonialCardSlot">
+                <div class="tastimonialDescript">
+                    <span>Tastimonial</span>
+                    <br>
+                    <br>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident odit facilis quidem totam magni! Blanditiis sit, hic tenetur voluptatem <br>
+                        exercitationem porro officia! Sint maiores amet laborum tempore eveniet quibusdam numquam.
+                </span>
+                    </div>
+            </div>
+            <div class="tastimonialCardSlot">
+                <div class="tastimonialCards">
+                    <div class="tastimonialIconUser">
+                        <div class="tastimonialIconUserImg">0</div>
+                    </div>
+                    <div class="tastimonialIconUserBrief">
+                        CLIENTAL #1<br>
+                        ajgsghjaauauhuhouihiouHIzOIuiojhjxddwdwwwwdy <br>
+                        ajgsghjaauauhuhouihiouHIzOIuiojhjxhacbAUIHu <br>
+                        ajgsghjaauauhuhouihiouHIUAHUIahouih <br>
+                    </div>
+                </div>
+                <div class="tastimonialCards">
+                     <div class="tastimonialIconUser">
+                        <div class="tastimonialIconUserImg">0</div>
+                    </div>
+                    <div class="tastimonialIconUserBrief">
+                        CLIENTAL #1<br>
+                        ajgsghjaauauhuhouihiouHIzOIuiojhjxddwdwwwwdy <br>
+                        ajgsghjaauauhuhouihiouHIzOIuiojhjxhacbAUIHu <br>
+                        ajgsghjaauauhuhouihiouHIUAHUIahouih <br>
+                    </div>
+                </div>
+                </div>
+                <div class="tastimonialCardSlot">
+                    <div class="tastimonialCards">
+                        <div class="tastimonialIconUser">
+                            <div class="tastimonialIconUserImg">0</div>
+                        </div>
+                        <div class="tastimonialIconUserBrief">
+                            CLIENTAL #1<br>
+                            ajgsghjaauauhuhouihiouHIzOIuiojhjxddwdwwwwdy <br>
+                            ajgsghjaauauhuhouihiouHIzOIuiojhjxhacbAUIHu <br>
+                            ajgsghjaauauhuhouihiouHIUAHUIahouih <br>
+                        </div>
+                    </div>
+                    <div class="tastimonialCards">
+                         <div class="tastimonialIconUser">
+                            <div class="tastimonialIconUserImg">0</div>
+                        </div>
+                        <div class="tastimonialIconUserBrief">
+                            CLIENTAL #1<br>
+                            ajgsghjaauauhuhouihiouHIzOIuiojhjxddwdwwwwdy <br>
+                            ajgsghjaauauhuhouihiouHIzOIuiojhjxhacbAUIHu <br>
+                            ajgsghjaauauhuhouihiouHIUAHUIahouih <br>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing">
+            <div class="priceList1">priceListRegular</div>
+            <div class="priceList2">priceListPremium</div>
+            <div class="priceList1">priceListStandard</div>
+        </div>
+        <div class="ourTeam">ourTeam</div>
+        <div class="footer">
+            <div class="upperFooter">
+                <div class="upperFooterSubInfo">aavavavav</div>
+                <div class="upperFooterSubInfo">uuhuwuk</div>
+                <div class="upperFooterSubInfo">efwfihwifowjf</div>
+                <div class="upperFooterSubInfo">wefwf</div>
+            </div>
+            <div class="lowerFooter">lowerFooter</div>
+        </div>
+    </div>
+</body>
+</html>
